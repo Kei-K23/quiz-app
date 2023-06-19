@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <title>quiz's time</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="main__header">
+        <span style="color: goldenrod">Q</span>u<span style="color: darksalmon"
+          >i</span
+        >z's <span style="color: blueviolet">T</span>im<span
+          style="color: crimson"
+          >e</span
+        >
+      </h1>
+    </header>
+    <div id="correct__alert">
+      <h2>Good Job!</h2>
+    </div>
+    <div id="wrong__alert">
+      <h2>Sorry! Try again</h2>
+    </div>
+    <section id="loading__container">
+      <img class="loadingGIF" src="./assets/giphy.gif" alt="loading..." />
+    </section>
+    <section id="main__container">
+      <h2 class="emoji">🤔</h2>
+      <h1 id="question"></h1>
+      <hr />
+      <form id="submitForm">
+        <div class="multiple__container">
+          <input type="radio" id="choice_1" name="choices" required />
+          <label id="choice1" for="choice_1"></label>
+        </div>
+        <div class="multiple__container">
+          <input type="radio" id="choice_2" name="choices" required />
+          <label id="choice2" for="choice_2"></label>
+        </div>
+        <div class="multiple__container">
+          <input type="radio" id="choice_3" name="choices" required />
+          <label id="choice3" for="choice_3"></label>
+        </div>
+        <div class="multiple__container">
+          <input type="radio" id="choice_4" name="choices" required />
+          <label id="choice4" for="choice_4"></label>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <p class="footer__1">
+        &copy; 2023 quiz's-time@Kei-K. All rights reserved.
+      </p>
+      <p class="footer__2">
+        Create with &#128153; by
+        <a href="https://github.com/Kei-K23">Kei-K</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
