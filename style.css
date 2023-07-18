@@ -21,8 +21,8 @@ body {
 }
 
 .main__header {
-  font-size: 40px;
-  margin: 30px 0 50px;
+  font-size: 2.5rem;
+  margin: 1.875rem 0 3.125rem;
   text-decoration: underline;
   user-select: none;
 }
@@ -30,29 +30,30 @@ body {
 #main__container {
   background-color: var(--secondary-color);
   width: 50%;
-  padding: 20px 25px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.7);
+  padding: 1.25rem 1.5625rem;
+  border-radius: 0.625rem;
+  box-shadow: 0.625rem 0.625rem 0.5625rem rgba(0, 0, 0, 0.7);
   user-select: none;
 }
 
 .emoji {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
 }
+
 #question {
-  font-size: 33px;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin: 5px 0 20px;
+  margin: 0.3125rem 0 1.25rem;
   position: relative;
 }
 
 .multiple__container {
-  margin: 20px 0;
+  margin: 0.7rem 0;
   background-color: var(--text-color);
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-size: 20px;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 0.625rem;
+  font-size: 1.1rem;
   font-weight: 600;
   width: 100%;
 }
@@ -65,16 +66,17 @@ body {
 }
 
 .btn {
-  margin: 10px 0;
-  padding: 10px 15px;
-  font-size: 18px;
+  margin: 0.625rem 0;
+  padding: 0.625rem 0.9375rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   border: none;
   cursor: pointer;
   transition: all ease-in 0.3s;
   text-align: center;
 }
+
 .btn:hover {
   background-color: #ddd;
 }
@@ -83,9 +85,9 @@ body {
   position: absolute;
   top: 3%;
   background-color: rgb(24, 233, 24);
-  width: 200px;
-  height: 50px;
-  padding: 10px;
+  width: 12.5rem;
+  height: 3.125rem;
+  padding: 0.625rem;
   text-align: center;
   display: none;
   animation: appear 1s ease-out 0s 1 normal;
@@ -97,16 +99,17 @@ body {
   top: 0;
   left: 0;
   background-color: green;
-  width: 10px;
+  width: 0.625rem;
   height: inherit;
 }
+
 #wrong__alert {
   position: absolute;
   top: 3%;
   background-color: rgb(233, 24, 24);
-  width: 200px;
-  height: 50px;
-  padding: 10px;
+  width: 12.5rem;
+  height: 3.125rem;
+  padding: 0.625rem;
   text-align: center;
   display: none;
   animation: appear 1s ease-out 0s 1 normal;
@@ -118,8 +121,12 @@ body {
   top: 0;
   left: 0;
   background-color: rgb(148, 1, 1);
-  width: 10px;
+  width: 0.625rem;
   height: inherit;
+}
+
+.loadingGIF {
+  width: 20rem;
 }
 
 footer {
@@ -129,12 +136,12 @@ footer {
   width: 100%;
   text-align: center;
   color: #ccc;
-  font-size: 19px;
-  padding: 10px;
+  font-size: 1.1875rem;
+  padding: 0.625rem;
 }
 
 .footer__1 {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 @keyframes appear {
@@ -142,50 +149,49 @@ footer {
     opacity: 0;
     transform: scale3d(0.3, 0.3, 0.3);
   }
+
   60% {
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 900px) {
+  .main__header {
+    font-size: 2rem;
+    margin: 1.5rem 0 2rem;
+    text-decoration: underline;
+    user-select: none;
+  }
+
   #main__container {
     width: 90%;
-    padding: 10px 14px;
+    padding: 0.625rem 0.875rem;
   }
 
   #question {
-    font-size: 15px;
+    font-size: 1.3rem;
   }
 
   .multiple__container {
-    margin: 14px 0;
+    margin: 0.6rem 0;
     background-color: var(--text-color);
-    padding: 8px 10px;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 600;
+    padding: 0.5rem 0.625rem;
+    border-radius: 0.625rem;
+    font-size: 1.1rem;
   }
 
   .btn {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 0.625rem 0;
+    font-size: 1rem;
   }
+
   footer {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
 
   .loadingGIF {
-    width: 300px;
-  }
-}
-
-@media (max-width: 1200px) {
-  #main__container {
-    width: 70%;
-  }
-
-  #question {
-    font-size: 27px;
+    width: 15rem;
   }
 }
